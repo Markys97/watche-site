@@ -1,0 +1,31 @@
+.baner{
+    width: 100%;
+    background: url('../img/bg.png') no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    background-position: center;
+    &-container{
+        
+       //border:1px solid white;
+    }
+    &-content{
+      max-width: 630px;
+      margin: auto;
+      //border:1px solid red;
+     
+    }
+    &__big-logo{
+        display: block;
+        margin: auto;
+        padding-top: 160px;
+        margin-bottom: 80px;
+        @media screen and (max-width:390px){
+            width: 280px;
+         }
+    }
+    &__text{
+        text-align: center;
+        margin-bottom: 160px;
+        
+    }
+}

@@ -1,0 +1,35 @@
+.brand{
+     background: #0F0F0F;
+    padding-top: 60px;
+
+    &__title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__separator{
+        margin:auto;
+        margin-bottom: 40px;
+        
+        
+    }
+    &-sponsor{
+        padding-bottom: 80px;
+        @media screen and (max-width:773px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+    &__sponsor-logo{
+        @media screen and (max-width:773px) {
+            display: block;
+           
+            
+        }
+    }
+    &__sponsor-logo:not(:first-child){
+        margin-left: 5px;
+    }
+}

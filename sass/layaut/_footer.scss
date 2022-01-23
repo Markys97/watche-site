@@ -1,0 +1,107 @@
+.footer{
+    width: 100%;
+    &-item{
+        padding:0px 15px;
+    }
+    &-body{
+        background: url('../img/Rectangle 15.png') no-repeat;
+        padding-top: 80px;
+        @media screen and (max-width:992px) {
+           background: #000;
+           
+            
+        }
+    }
+    
+    &-body-container{
+        
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:992px) {
+            flex-direction: column;
+            align-items: center;
+            padding:40px!important ;
+           
+            
+        }
+    }
+    &-item__title{
+        
+        margin-bottom: 40px;
+    }
+
+    &__text{
+        max-width: 350px;
+        margin-bottom: 35px;
+        font-size: 14px;
+    }
+    &-categorie{
+        max-width: 360px;
+    }
+    &-categorie__item{
+        display: inline-block;
+        padding:10px 20px;
+        background: #0F0F0F;
+        color:#D0D0D0;
+        margin:0 20px 20px 0px;
+    }
+    &__form{
+        padding:0 ;
+        display: flex;
+    }
+    &__input{
+        max-width: 210px;
+        background: rgba(255, 255, 255, 0.4);
+        color:red;
+        padding-left:10px;
+        
+        font-family: 'PT Sans';
+    }
+    input{
+        display: inline-block;
+        border:none;
+        height: 42px;
+        font-size: 14px;
+    }
+    input[type="submit"]{
+        padding:10px 20px;
+        background: #0F0F0F;
+        color:white;
+        
+    }
+
+    &-bottom{
+        background: #000;
+        @media screen and (max-width:992px) {
+           display: none ;
+           
+            
+        }
+        
+    }
+    &-bottom-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'PT SANS';
+        min-height: 50px;
+        p{
+            color:white;
+        }
+    }
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color:white;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:white;
+  font-size: 14px;
+}
+
+::placeholder {
+  color:white;
+  font-size: 14px;
+}

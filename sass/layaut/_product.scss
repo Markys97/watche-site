@@ -1,0 +1,108 @@
+.product{
+    width: 100%;
+    &-content{
+        width: 100%;
+        display: flex;
+        @media screen and (max-width:895px) {
+            flex-direction: column;
+        }
+    }
+    &-item--one{
+        flex:0 1 1014px;
+        @media screen and (max-width:895px) {
+            flex:auto;
+        }
+        //border:1px solid red;
+        background: #000;
+        &-container{
+            display: flex;
+            justify-content: space-evenly;
+            @media screen and (max-width:665px) {
+                flex-direction: column;
+                align-items: center;
+                
+               
+                
+            }
+        }
+        .product__title{
+            text-align: center;
+            margin-top: 90px;
+            margin-bottom: 50px;
+            
+            font-size: 40px;
+            
+        }
+        .product__separator{
+           
+            margin: auto;
+            margin-bottom: 50px;
+        }
+    }
+    &__card{
+       width: calc(85%/ 3);
+       @media screen and (max-width:665px) {
+        width: 80%;
+        
+       
+        
+    }
+        //border:1px solid white;
+        margin-bottom: 93px;
+    }
+    &__body-card{
+        min-height: 320px;
+        background: #191B1C;
+        padding: 55px 0;
+        margin-bottom: 25px;
+    }
+    &__img{
+        display: block;
+        margin:auto;
+    }
+    &__title-card{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    &__price-card{
+        font-family: 'Playfair Display';
+        font-size: 16px;
+        line-height: 19px;
+
+        /* light-gray */
+
+        color: #D0D0D0;
+    }
+
+    &-item--two{
+        flex: 0 1 915px;
+        background: url('../img/Rectangle 8.jpg') no-repeat;
+        background-size: cover;
+        
+        position: relative;
+        &-content{
+            max-width: 370px;
+           // border:1px solid white;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 100px;
+        }
+
+        .product__title{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product__separator{
+            margin: auto;
+            margin-bottom: 42px;
+        }
+    }
+
+    &__btn{
+       position: relative;
+       left: 50%;
+       transform: translate(-50%);
+    }
+}
