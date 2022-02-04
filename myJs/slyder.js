@@ -27,3 +27,21 @@ closeButton.addEventListener('click',e=>{
   
 
 })
+
+
+
+
+
+
+window.addEventListener('resize',e=>{
+  console.log('mama')
+  if(window.screen.width>628){
+    nav.classList.remove('show-menu')
+    menu.classList.remove('show-menu')
+  
+  
+  
+   
+    closeButton.classList.remove('visible')
+  }
+})
