@@ -2,6 +2,9 @@
     width: 100%;
     &-item{
         padding:0px 15px;
+        @media screen and (max-width:363px) {
+            padding:0 0px;
+        }
     }
     &-body{
         background: url('../img/Rectangle 15.png') no-repeat;
@@ -48,6 +51,7 @@
     &__form{
         padding:0 ;
         display: flex;
+       
     }
     &__input{
         max-width: 210px;
@@ -56,6 +60,7 @@
         padding-left:10px;
         
         font-family: 'PT Sans';
+       
     }
     input{
         display: inline-block;
@@ -67,6 +72,9 @@
         padding:10px 20px;
         background: #0F0F0F;
         color:white;
+        @media screen and (max-width:363px) {
+            padding:10px 0px;
+        }
         
     }
 

@@ -118,14 +118,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 1000s ease-in 300s;
+  transition: all 1000s ease-in 300s;
 }
 
 @media screen and (max-width: 628px) {
   .header-bottom-navbar {
-    display: none;
     width: 100vw;
     z-index: 100;
-    height: 100%;
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: all 300s ease-in;
+    transition: all 300s ease-in;
   }
 }
 
@@ -139,10 +143,14 @@ a {
   .header-bottom-menu {
     background: #000;
     width: 100%;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    opacity: 0;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 0px;
+    overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -200,6 +208,8 @@ a {
   top: 30px;
   right: 30px;
   display: none;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 @media screen and (max-width: 628px) {
@@ -209,7 +219,8 @@ a {
 }
 
 .show-menu {
-  display: block !important;
+  height: 100%;
+  opacity: 1;
 }
 
 .baner {
@@ -577,6 +588,12 @@ a {
   padding: 0px 15px;
 }
 
+@media screen and (max-width: 363px) {
+  .footer-item {
+    padding: 0 0px;
+  }
+}
+
 .footer-body {
   background: url("../img/Rectangle 15.png") no-repeat;
   padding-top: 80px;
@@ -658,6 +675,12 @@ a {
   padding: 10px 20px;
   background: #0F0F0F;
   color: white;
+}
+
+@media screen and (max-width: 363px) {
+  .footer input[type="submit"] {
+    padding: 10px 0px;
+  }
 }
 
 .footer-bottom {
